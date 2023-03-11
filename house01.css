@@ -10,6 +10,11 @@
   .row{
     box-sizing: border-box;
   }
+  .link-button
+  {
+    color: #ffffff;
+    text-decoration: none ;
+  }
   .container {
     position: relative;
   }

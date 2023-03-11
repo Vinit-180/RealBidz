@@ -21,6 +21,7 @@
     crossorigin="anonymous"></script>
   <script>
     $(function () { $("#nav").load('nav.html'); });
+    $(function () { $("#foot").load('footer.html'); });
   </script>
   <style>
     .img1 {
@@ -44,13 +45,22 @@
     .border-button {
       border: 1px solid rgb(225, 24, 55) !important;
     }
+    h1
+    {
+      font-size: 2vw;
+    }
+    #Welcome
+    {
+      font-size: 2vw;
+    }
   </style>
+  
 </head>
-
-<body>
+<body onload="welcome();">
   <div id="nav"></div>
-  <div style="border-bottom:4px solid rgb(225,24,55);">
-    <h1>Welcome to Realbidz</h1>
+  <div>
+    <p id="Welcome"></p>
+    <hr style="width: 20%; border: 2px solid rgb(239, 10, 45) !important;">
   </div>
   <div class="container-fluid" id="i1">
     <center>Find Out More</center>
@@ -96,7 +106,7 @@
       <h1 id="t1">Welcome To RealBidz</h1>
       <img src="pexels-photo-3285725.png" alt="" width="100%">
       <center>
-        <h1>Discover your perfect property in cyprus</h1>
+        <h1>Discover your perfect property in RealBidz</h1>
       </center>
     </div>
   </div>
@@ -312,6 +322,24 @@
       </div>
     </div>
   </div>
+  <div id="foot"></div>
+  <!-- <script>
+    
+    console.log("Function load now")
+    var i = 0;
+    var txt = 'Welcome to Realbidz';
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    
+    function welcome(){
+  if (i < txt.length) {
+    document.getElementById("Welcome").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(welcome, speed);
+  }
+
+}
+  </script> -->
+  <script src="homepage.js"></script>
 </body>
 
 </html>
