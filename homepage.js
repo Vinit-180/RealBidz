@@ -8,6 +8,7 @@ function welcome(){
   if (i < txt.length) {
     document.getElementById("Welcome").innerHTML += txt.charAt(i);
     i++;
-    setTimeout(welcome, speed);
+    setTimeout(welcome, speed);  
   }
+  
 }

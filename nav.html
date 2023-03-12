@@ -31,6 +31,7 @@
     {
       background-color: rgb(227,24,55);
     }
+    
   </style>
 </head>
 
@@ -66,6 +67,7 @@
             <div class="mb-3">
               <label for="exampleInputPassword3" class="form-label">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Enter your password">
+              <p id="text">WARNING! Caps lock is ON.</p>
             </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
@@ -115,6 +117,7 @@
                 <div class="invalid-feedback">
                   Please Enter an email id.
                 </div>
+                
               </div>
               <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
             </div>
@@ -129,20 +132,24 @@
             </div>
         
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <label for="exampleInputPassword4" class="form-label">Password</label>
           <div class="input-group has-validation">
-            <input type="password" class="form-control has-validation" id="exampleInputPassword1"
-              placeholder="Enter your password" required>
-            <div class="invalid-feedback">
-              Please Enter a password.
-            </div>
+            <input type="password" class="form-control has-validation" id="exampleInputPassword4"
+              placeholder="Enter your password" required >
+              <div class="invalid-feedback">
+                Please Enter a password.
+              </div>
+              <br>
+              <div id="text2" style="display: block;">WARNING! Caps lock is ON.</div>
           </div>
+          
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+          <label for="exampleInputPassword5" class="form-label">Confirm Password</label>
           <div class="input-group has"></div>
           <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Enter your password"
-            required>
+          required>
+          <p id="text3" style="display: block;">WARNING! Caps lock is ON.</p>
           <div class="invalid-feedback">
             Please choose a username.
           </div>
@@ -189,6 +196,7 @@
       </div>
     </div>
   </nav>
+  <script src="nav.js"></script>
 </body>
 
 </html>
