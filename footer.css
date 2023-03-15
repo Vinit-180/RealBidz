@@ -68,6 +68,7 @@ h3 {
 
     .icon-visible {
         visibility: visible;
+        float: left;
     }
 
     .icon-not-visible {
@@ -86,10 +87,29 @@ h3 {
     }
 
     .table {
-        font-size: 4.4vw !important;
+        font-size: 3.4vw !important;;
     }
 
     .aboutRealBidz {
-        font-size: 4.4vw;
+        font-size: 2.4vw;
+    }
+    .concat
+    {
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width:769px) and (max-width:900px) {
+    .table
+    {
+        font-size: 2.4vw !important;
+    }
+    .aboutRealBidz
+    {
+        font-size: 2.4vw;
+    }
+    .discription
+    {
+        font-size: 2vw;
     }
 }

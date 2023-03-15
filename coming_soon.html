@@ -17,43 +17,51 @@
     crossorigin="anonymous"></script>
   <script>
     $(function () { $("#nav").load('nav.html'); });
-    $(function () { $("#foot").load('footer.html'); });
     </script>
     <style>
         body,html{
             margin: 0;
+            height: 100%;
         }
         .middle
         {
             position: absolute;
-            
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
             text-align: center;
-            color: #FFFFFF;
-            font-weight: bold;
-            font-size: 20px;
+            /* font-weight: bold; */
+            /* font-size: 20px; */
         }
         hr
         {
-            margin: auto;
-            width: 40%;
+            margin: auto !important;
+            width: 40% !important;
+            /* color: black !important; */
+            /* border: 5px solid !important; */
+            opacity: 1 !important;
         }
-        .first
+        .bgimg
         {
-            /* background-image: url('auction.png'); */
+            background-image: url('Images/Stairs.png');
             height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-size: 25px;
+            /* font-family: "Courier New", Courier, monospace; */
         }
-        .first-img
+
+        /* .first-img
         {
             background-position: center;
             background-size: cover;
             position: relative;
 
-        }
-        @media screen and (max-width:770px) {
-            .middle
+        } */
+        /* @media screen and (max-width:770px) {
+            /* .middle
             {
                 position: absolute;
                 top: 50%;
@@ -66,24 +74,21 @@
             .footer
             {
                 margin: 10%;
-            }
-        }
+            } */
     </style>
 </head>
-<body>
+<body class="bgimg">
     <div id="nav"></div>
     <div class="container first">
         <div class="first-img">
-            <img src="Images/Stairs.png" alt="" width="100%" height="100%">
+            <!-- <img src="Images/Stairs.png" alt="" width="100%" height="100%"> -->
         </div>
         <div class="middle">
             <h1>Coming Soon...</h1>
             <hr>
-            <p id="coming" style="font-size: 20px;"></p>
+            <p id="coming" style="font-size: 25px;"></p>
         </div>
-
     </div>
-    <div id="foot" class="footer"></div>
     <script src="coming_soon.js"></script>
 </body>
 </html>

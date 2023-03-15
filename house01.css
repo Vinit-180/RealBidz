@@ -100,3 +100,19 @@
     float: left;
     
   }
+  @media screen and (max-width:768px)
+  {
+    .house-card
+    {
+      display: block !important;
+      width: 100%;
+    }
+    
+  }
+  @media screen and (min-width:769px) and (max-width:900px)  {
+    .house-card
+    {
+      display: block !important;
+      width: 100%;
+    }    
+  }
