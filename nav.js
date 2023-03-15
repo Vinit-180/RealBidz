@@ -28,16 +28,17 @@ input2.addEventListener("keyup", function(event) {
   }
 });
 
-var input3 = document.getElementById("exampleInputPassword5");
-var text3 = document.getElementById("text3");
-text3.style.display="none";
-// When the user presses any key on the keyboard, run the function
-input3.addEventListener("keyup", function(event) {
+// var input3 = document.getElementById("exampleInputPassword5");
+// var text3 = document.getElementById("text3");
+// text3.style.display="none";
+// // When the user presses any key on the keyboard, run the function
+// input3.addEventListener("keyup", function(event) {
 
-  // If "caps lock" is pressed, display the warning text
-  if (event.getModifierState("CapsLock")) {
-    text3.style.display = "block";
-  } else {
-    text3.style.display = "none"
-  }
-});
+//   // If "caps lock" is pressed, display the warning text
+//   if (event.getModifierState("CapsLock")) {
+//     text3.style.display = "block";
+//   } else {
+//     text3.style.display = "none"
+//   }
+// });
+
