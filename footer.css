@@ -24,9 +24,10 @@ h3 {
 
 .aboutRealBidz {
     font-size: 1.2vw;
+    margin-bottom: 4vh;
 }
 
-.footers {
+.footers_rb {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -74,32 +75,35 @@ h3 {
     .icon-not-visible {
         visibility: hidden;
     }
-
-    /* .table
-            {
-                /* overflow: hidden; */
-    /* display: grid; */
-    /* flex-direction: row; */
-    /* overflow-block: scroll; */
-    /* } */
-    */ .share {
+     .share {
         font-size: 0px;
     }
 
     .table {
-        font-size: 3.4vw !important;;
+        font-size: 3.4vw !important;
     }
 
     .aboutRealBidz {
         font-size: 2.4vw;
+        margin-bottom: 0vh;
+    }
+    .abc
+    {
+        display: none;
     }
     .concat
     {
         padding: 0;
         margin: 0;
     }
+    .footers_rb
+    {
+        position: relative;
+        margin-bottom: 25vh;
+    }
 }
-@media screen and (min-width:769px) and (max-width:900px) {
+@media screen and (min-width:771px) and (max-width:900px) {
+    
     .table
     {
         font-size: 2.4vw !important;
@@ -107,9 +111,15 @@ h3 {
     .aboutRealBidz
     {
         font-size: 2.4vw;
+        margin-bottom: 10vh;
     }
     .discription
     {
         font-size: 2vw;
+    }
+    .footers_rb
+    {
+        position: relative;
+        margin-bottom: 20vh;
     }
 }

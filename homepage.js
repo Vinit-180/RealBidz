@@ -10,5 +10,24 @@ function welcome(){
     i++;
     setTimeout(welcome, speed);  
   }
-  
+  else
+  {
+    var element=document.getElementById("Welcome");
+  var span = document.createElement("span");
+  // Set the innerHTML of the span element
+  span.innerHTML = ".";
+
+  // Add the span element to the existing element
+  element.appendChild(span);
+  setInterval(function () {
+    if (element.length > txt) {
+      // var lastDot = dots[dots.length - 1];
+      span.style.visibility = span.style.visibility === "hidden" ? "visible" : "hidden";
+    }
+    else
+    {
+      span.style.visibility = span.style.visibility === "hidden" ? "visible" : "hidden";
+    }
+  }, 500); 
+}
 }
