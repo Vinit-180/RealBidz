@@ -44,6 +44,17 @@
     position: absolute;
     top: 0;
   }
+  .home-details
+  {
+    font-size: large;
+  }
+
+.concat-btn
+{
+  border: 2px solid black;
+  border-radius: 10%;
+  
+}
   
   /* Container for image text */
   /* .caption-container {

@@ -42,3 +42,17 @@ input2.addEventListener("keyup", function(event) {
 //   }
 // });
 
+var loggedUser=window.sessionStorage.getItem('1')
+console.log(loggedUser)
+const logout=document.querySelector('.logout')
+if(loggedUser!=null)
+{
+   document.getElementById('login').style.display="none";
+   document.getElementById('signUp1').style.display="none";
+//    logout.classList.add('active')
+document.getElementById('logout').style.display="block";
+}
+if(loggedUser==null)
+{
+  document.getElementById("logout").style.display="none";
+}
