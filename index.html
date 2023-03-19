@@ -1,133 +1,375 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Real Bidz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"
-        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        $(function () { $("#nav").load('nav.html'); });
-        $(function () { $("#footer").load('footer.html') });
-    </script>
-    <style>
-        .btns-home {
-            background-color: rgb(227, 24, 55) !important;
-            height: 70px;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () { $("#nav").load('nav.html'); });
+    $(function () { $("#foot").load('footer.html'); });
+  </script>
+  <link rel="stylesheet" href="index.css">
 
-        .home-links {
-            text-decoration: none !important;
-            color: black;
-        }
-
-        .home-links:hover {
-            color: white !important;
-        }
-    </style>
 </head>
 
-<body>
-    <div id="nav"></div>
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static"
-        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">LEGAL DOCUMENTS</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque. Lobortis mattis aliquam
-                    faucibus purus in. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Ut enim blandit
-                    volutpat maecenas volutpat blandit aliquam etiam erat. Dis parturient montes nascetur ridiculus mus
-                    mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque. Lobortis mattis
-                    aliquam faucibus purus in. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Ut enim
-                    blandit volutpat maecenas volutpat blandit aliquam etiam erat. Dis parturient montes nascetur
-                    ridiculus mus mauris.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Agree</button>
-                </div>
-            </div>
+<body onload="welcome();">
+  <div id="nav"></div>
+  <div>
+    <p id="Welcome">
+    </p>
+    <hr style="width: 20%; border: 2px solid rgb(231, 19, 51) !important;">
+  </div>
+  <div class="container-fluid" id="i1">
+    <!-- <center>Find Out More</center> -->
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
+    <div class="container-fluid img1">
+      <h1 id="t1">Welcome To RealBidz
+      </h1>
+      
+      <hr id="hr1">
+      <img src="pexels-photo-3285725.png" alt="" width="100%">
+      <center>
+        <h1>Discover your perfect property in RealBidz</h1>
+      </center>
+    </div>
+  </div>
+  <div class="bg-light row container-fluid ">
+    <!-- <div class="input-group mb-3  col-md-3">
+        <label class="input-group-text" for="inputGroupSelect01">District</label>
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>Any</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        </div> -->
+    <div class="col-md-3 m-auto">
+      <label for="inputState" class="form-label">DISTRICT</label>
+      <select id="inputState" class="form-select border-button">
+        <option selected>Any</option>
+        <option>Ahmedabad</option>
+        <option>Gandhinagar</option>
+        <option>Rajkot</option>
+        <option>Surat</option>
+        <option>Valsad</option>
+        <option>Vadodara</option>
+        <option>Sabarkantha</option>
+      </select>
+    </div>
+    <div class="col-md-3 m-auto">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select border-button">
+        <option selected>Area/Village</option>
+        <option>Ambavadi</option>
+        <option>Bopal</option>
+        <option>Chandkheda</option>
+        <option>Gota</option>
+        <option>Sola</option>
+        <option>Thaltej</option>
+        <option>Nikol</option>
+        <option>Sarkhej</option>
+      </select>
+    </div>
+    <div class="col-md-3 m-auto">
+      <label for="inputState" class="form-label">Type</label>
+      <select id="inputState" class="form-select border-button">
+        <option selected>Any</option>
+        <option>Buy</option>
+        <option>Rent</option>
+        <option>PG</option>
+        <option>Plot</option>
+        <option>Commercial</option>
+      </select>
+    </div>
+  </div>
+  <div class="container-fluid row  bg-light">
+    <div class="col-md-3 m-auto mt-4">
+      <label for="inputState" class="form-label">Category</label>
+      <select id="inputState" class="form-select border-button">
+        <option selected>Choose Category</option>
+        <option>Flat</option>
+        <option>1 Bhk</option>
+        <option>2 Bhk</option>
+        <option>3 Bhk</option>
+        <option>4 Bhk</option>
+        <option>4+ Bhk</option>
+        <option>House/Villa</option>
+      </select>
+    </div>
+    <div class="col-md-3 mt-4 m-auto ">
+      <label for="inputState" class="form-label">Price</label>
+      <select id="inputState" class="form-select dropdown-length border-button">
+        <option selected>Budget</option>
+        <option>&#8377; 25 Lac</option>
+        <option>&#8377; 30 Lac</option>
+        <option>&#8377; 40 Lac</option>
+        <option>&#8377; 50 Lac</option>
+        <option>&#8377; 60 Lac</option>
+        <option>&#8377; 80 Lac</option>
+        <option>&#8377; 1 Cr</option>
+        <option>&#8377; 1.2 Cr</option>
+        <option>&#8377; 1.4 Cr</option>
+      </select>
+    </div>
+    <div class="col-md-3 m-auto mt-5">
+      <button type="button" class="btn btn-dark btn-lg fw-bold" style="width: 15em; height: 2.5em;"> &#128269;
+        Search</button>
+    </div>
+  </div>
+
+
+  <div>
+    <div class="row container ads">
+      <h1>
+        <center>
+          Properties In Ahmedabad
+        </center>
+      </h1>
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/1 (2).png" class="card-img-top" alt="...">
+          <div class="card-body m-2">
+            <h5 class="card-title">3 BHK Apartment</h5>
+            <p class="card-text fw-bold">
+              48.8 Lac | 1140sqft
+            </p>
+            <p class="card-text"><small class="text-muted">Kavisha amara</small>
+              <br>
+              Under Construction
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/1.png" class="card-img-top" alt="...">
+          <div class="card-body m-2">
+            <h5 class="card-title">2 BHK Apartment</h5>
+            <p class="card-text fw-bold"> 40 Lac | 1085 sqft</p>
+            <p class="card-text"><small class="text-muted">Swarnim Alanta</small>
+              <br>
+              Vavol,Gandhinagar
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (4).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">2 BHK apartment </h5>
+            <p class="card-text fw-bold"> 34.5 Lac | sqft </p>
+            <p class="card-text"><small class="text-muted">HR enteria</small>
+              Sola,Ahmedabad</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (4).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">3 BHK flat</h5>
+            <p class="card-text fw-bold"> 62 Lac | Nikol,Ahmedabad</p>
+            <p class="card-text"><small class="text-muted">Under Construction</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row container ads">
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (1).png" class="card-img-top" alt="...">
+          <div class="card-body m-2">
+            <h5 class="card-title">3 BHK Apartment</h5>
+            <p class="card-text fw-bold">
+              48.8 Lac | 1140sqft
+            </p>
+            <p class="card-text"><small class="text-muted">Kavisha amara</small>
+              <br>
+              Under Construction
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (3).png" class="card-img-top" alt="...">
+          <div class="card-body m-2">
+            <h5 class="card-title">2 BHK Apartment</h5>
+            <p class="card-text fw-bold"> 40 Lac | 1085 sqft</p>
+            <p class="card-text"><small class="text-muted">Swarnim Alanta</small>
+              <br>
+              Vavol,Gandhinagar
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (4).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">2 BHK apartment </h5>
+            <p class="card-text fw-bold"> 34.5 Lac | sqft </p>
+            <p class="card-text"><small class="text-muted">HR enteria</small>
+              Sola,Ahmedabad</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (4).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">3 BHK flat</h5>
+            <p class="card-text fw-bold"> 62 Lac | Nikol,Ahmedabad</p>
+            <p class="card-text"><small class="text-muted">Under Construction</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row container ads">
+      <h1>
+        <center>
+          Properties In Gandhinagar
+        </center>
+      </h1>
+      <div class=" col-sm-6 col-lg-3">
+        <a href="house2.html" class="link-home">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (1).png" class="card-img-top" alt="...">
+          <div class="card-body m-2">
+            <h5 class="card-title">3 BHK Apartment</h5>
+            <p class="card-text fw-bold">
+              48.8 Lac | 1140sqft
+            </p>
+            <p class="card-text"><small class="text-muted">Kavisha amara</small>
+              <br>
+              Under Construction
+            </p>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <a href="house2.html" class="link-home">
+        <div class="card p-4 m-4">
+          <img src="Images/House1 (3).png" class="card-img-top" alt="...">
+          <div class="card-body m-2">
+            <h5 class="card-title">2 BHK Apartment</h5>
+            <p class="card-text fw-bold"> 40 Lac | 1085 sqft</p>
+            <p class="card-text"><small class="text-muted">Swarnim Alanta</small>
+              <br>
+              Vavol,Gandhinagar
+            </p>
+          </div>
+        </div>
+        </a>
+      </div>
+
+      <div class=" col-sm-6 col-lg-3">
+        <a href="house2.html" class="link-home">
+        <div class="card p-4 m-4">
+          <!-- <a href="house2.html"> -->
+          <img src="Images/House1 (4).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">2 BHK apartment </h5>
+            <p class="card-text fw-bold"> 34.5 Lac | sqft </p>
+            <p class="card-text"><small class="text-muted">HR enteria</small>
+              Sola,Ahmedabad</p>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class=" col-sm-6 col-lg-3">
+        <a href="house2.html" class="link-home">
+        <div class="card p-4 m-4">
+          
+          <img src="Images/House1 (4).png" class="card-img-top" alt="...">
+        
+          <div class="card-body">
+            <h5 class="card-title">3 BHK flat</h5>
+            <p class="card-text fw-bold"> 62 Lac | Nikol,Ahmedabad</p>
+            <p class="card-text"><small class="text-muted">Under Construction</small></p>
+          </div>
+        </div>
+      </a>
+      </div>
     </div>
 
-    <div class="container">
-        <img src="todd-kent-178j8tJrNlc-unsplash.jpg" alt="image of house" width="100%">
 
-        <div class="row container-fluid">
-            <div class="col-md-3 p-5">
-                <button class="btn btn-lg btns-home home-links" data-bs-target="#staticBackdrop4" data-bs-toggle="modal"
-                    type="button">
-                    <i><img src="guide-book.png" alt="" height="30px" width="20px"></i>
-                    <span>Buyer's Guide</span>
-                </button>
-            </div>
-            <div class="col-md-3 p-5">
-                <button class="btn btn-lg btns-home">
-                    <i><img src="Outline.png" alt="" height="30px"></i>
-                    <span class="p-5">FAQ</span>
-                </button>
-            </div>
-            <div class="col-md-3 p-5">
-                <button class="btn btn-lg btns-home">
-                    <i><img src="guide-book.png" alt="" height="30px" width="20px"></i>
-                    <a href="homepage.html" class="home-links">
-                        View Property
-                    </a>
-                </button>
-            </div>
-            <div class="col-md-3 p-5">
-                <button class="btn btn-lg btns-home">
-                    <i><img src="guide-book.png" alt="" height="30px" width="20px"></i>
-                    <a href="coming_soon.html" class="home-links">
-                        Download App
-                    </a>
-                </button>
-            </div>
-        </div>
-        <p class="border border-dark p-3 justify-content-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corporis.
-            Itaque aspernatur inventore magnam soluta similique nobis ab, ea quasi!
-            Sapiente odio voluptatibus quos totam reiciendis facilis, id perferendis repudiandae!
-            A necessitatibus, harum placeat sapiente impedit at facilis ad corrupti.
-            At reprehenderit, ipsum minima laudantium nobis id cupiditate molestias tenetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias commodi libero velit impedit nisi
-            minus reiciendis optio officiis numquam animi corrupti, tempora saepe non magni a. Aliquam, ullam ea
-            molestiae facilis consectetur corrupti dolor incidunt officia quasi beatae illum cumque aperiam sapiente est
-            repellendus excepturi odio recusandae veniam perspiciatis!
-        </p>
-    </div>
-    <div id="footer" style="text-decoration: none; color: white; text-align: justify;"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+  </div>
+
+
+
+  <div id="foot"></div>
+  <!-- <script>
+    
+    console.log("Function load now")
+    var i = 0;
+    var txt = 'Welcome to Realbidz';
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    
+    function welcome(){
+  if (i < txt.length) {
+    document.getElementById("Welcome").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(welcome, speed);
+  }
+
+}
+  </script> -->
+  <script src="index.js"></script>
 </body>
-<!-- <script>
-  let doctitle=document.title;
-  window.addEventListener("blur",()=>{
-    document.title="RealBidz.com ";
-  })
-  
-  window.addEventListener("focus",()=>{
-    document.title="Realbidz";
-  })
-  
-</script> -->
 
 </html>

@@ -1,0 +1,72 @@
+.img1 {
+    margin: 3%;
+    position: relative;
+}
+
+#t1 {
+    position: absolute;
+    top: 50px;
+    color: white;
+}
+#hr1
+{
+    position: absolute;
+    top: 80px;
+    /* color: rgb(225, 24, 55); */
+    width: 25%;
+    border: 100px solid rgb(230, 15, 47);
+    border-width: 2px;
+}
+
+.dropdown-length {
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow: scroll;
+    max-height: 40px;
+}
+
+.border-button {
+    border: 1px solid rgb(225, 24, 55) !important;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+#Welcome {
+    font-size: 2vw;
+}
+
+.ads {
+    margin-left: 5vw !important;
+}
+.row .col-lg-3 .card
+{
+    height: 420px;
+}
+.row .col-lg-3 .card:hover
+{
+    box-shadow: 10px 5px 10px rgb(225, 24, 55);
+}
+.row .col-lg-3 .card .card-img-top
+{
+    margin-bottom: 20px;
+}
+.link-home
+{
+    text-decoration: none  !important;
+    color: black;
+}
+.link-home:hover
+{
+    color: black !important;
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        display: block !important;
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+    }
+}
