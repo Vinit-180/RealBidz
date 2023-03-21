@@ -25,7 +25,7 @@
       <!-- <button class="btn btn-secondary pe-3">Login</button> -->
       <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="login">
         Login</button>
-      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="btns">
+      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signUp1">
         Sign up</button>
         <button type="button" class="btn btn-danger" id="logout">
           Logout
@@ -33,7 +33,7 @@
     </p>
   </div>
   <div class="modal fade modal-xl" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    aria-labelledby="staticBackdropLabel" aria-hidden="true" id="login-page">
     <div class="modal-dialog d-flex flex-row">
       <img src="auction.png" alt="image" height="500px" width="100%">
       <div class="modal-content">
@@ -58,10 +58,14 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
               <label class="form-check-label" for="exampleCheck1">Remember me</label>
             </div>
-            <button type="submit" class="btn btn-danger w-100 mt-3" onclick="loggedUser()">Login</button>
+            <div id="alert-login">
+              Email and Password doesn't match
+            </div>
+            <button type="submit" class="btn btn-danger w-100 mt-3" onclick="login()" >Login</button>
             <div class="text-center">
               <a href="#" class="">Forgot Password ?</a>
             </div>
+          
           </form>
         </div>
         <!-- <div class="modal-footer">

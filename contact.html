@@ -31,6 +31,16 @@
             text-decoration: underline;
             text-decoration-color: red;
         }
+        @media only screen and (max-width:768px) {
+            #image_concat
+            {
+                display: none;
+            }
+            #form1 input
+            {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -41,17 +51,17 @@
             Contact Us
         </h1>
         <div class="align-items-center row" id="form">
-            <div class="col-sm-6">
-                <img src="contactus.png" alt="">
+            <div class="col-sm-6" id="image_concat">
+                <img src="contactus.png" alt="image">
             </div>
             <div class="container-fluid  col-sm-6">
-                <form>
+                <form id="form1">
                     <div class="mb-3">
                         <input type="text" name="name" id="example" class="form-control" placeholder="Name">
                     </div>
                     <div class="mb-3 d-flex flex-row">
                         <input type="email" class="form-control me-2" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Email ">
+                            aria-describedby="emailHelp" placeholder="Email">
                         <input type="tel" name="phone" id="phonenumber" class="form-control "
                             placeholder="Phone Number">
                     </div>
