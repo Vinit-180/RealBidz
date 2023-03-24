@@ -26,6 +26,12 @@
 
   #signUp1 {
     background-color: rgb(227, 24, 55);
+    float: right;
+  }
+  #login
+  {
+    float: right;
+
   }
 
   .topnav {
@@ -36,6 +42,12 @@
   .topnav .icon {
     display: none ;
   }
+  /* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+  
 
   @media screen and (max-width:992px) {
     .topnav a:not(:first-child){

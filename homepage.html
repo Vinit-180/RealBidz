@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Real Bidz</title>
+    <title>RealBidz</title>
+    <link rel="icon" href="logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -34,30 +35,79 @@
         .home-links:hover {
             color: white !important;
         }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: red;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
     </style>
 </head>
 
 <body>
     <div id="nav"></div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static"
-        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+    <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content ">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">LEGAL DOCUMENTS</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque. Lobortis mattis aliquam
-                    faucibus purus in. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Ut enim blandit
-                    volutpat maecenas volutpat blandit aliquam etiam erat. Dis parturient montes nascetur ridiculus mus
-                    mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque. Lobortis mattis
-                    aliquam faucibus purus in. Feugiat in fermentum posuere urna nec tincidunt praesent semper. Ut enim
-                    blandit volutpat maecenas volutpat blandit aliquam etiam erat. Dis parturient montes nascetur
-                    ridiculus mus mauris.
+                    We can take responsibility for the property key and allow access to authorized persons and guest. We will hold a spare key in case of key loss. We can also arrange that a locksmith changes the locks if and when nece..
+                    <br>
+                    We can take responsibility for the property key and allow access to authorized persons and guest. We will hold a spare key in case of key loss. We can also arrange that a locksmith changes the locks if and when nece...
+                    <br>
+                    We can assist you design you property’s garden and help to maintain it for you though our garden landscaping team. We can do weeding, tidy-up and spray for you at a resonable hourlyt rate. We can also have installed timer irrigation...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop5"  data-bs-keyboard="true" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">LEGAL DOCUMENTS</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Whether you're seeking to buy or sell property in realbidz our know-how and market insights will help you through the process to make it easier, more enjoyable and rewarding. Blue Sky Properties approach to real estate is to maintain a highly personalized service, ensuring utmost care, trust, quality and ultimately a better client experience. www.realbidz.com is a property portal. All real estate inquiries are handled by Registered professional Real Estate Agents. FOX Smart Estate Agency is a Registered & Licensed Estate Agent with Registration No. 488 and Licensed No. 344/E
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
@@ -79,21 +129,21 @@
                 </button>
             </div>
             <div class="col-md-3 p-5">
-                <button class="btn btn-lg btns-home">
+                <button class="btn btn-lg btns-home" data-bs-target="#staticBackdrop5">
                     <i><img src="Outline.png" alt="" height="30px"></i>
                     <span class="p-5">FAQ</span>
                 </button>
             </div>
             <div class="col-md-3 p-5">
-                <button class="btn btn-lg btns-home">
-                    <i><img src="guide-book.png" alt="" height="30px" width="20px"></i>
-                    <a href="homepage.html" class="home-links">
+                <button class="btn btn-lg btns-home" onclick="index()">
+                    <i><img src="guide-book.png" alt=""  height="30px" width="20px"></i>
+                    <a href="index.html" class="home-links">
                         View Property
                     </a>
                 </button>
             </div>
             <div class="col-md-3 p-5">
-                <button class="btn btn-lg btns-home">
+                <button class="btn btn-lg btns-home" onclick="download()">
                     <i><img src="guide-book.png" alt="" height="30px" width="20px"></i>
                     <a href="coming_soon.html" class="home-links">
                         Download App
@@ -102,18 +152,36 @@
             </div>
         </div>
         <p class="border border-dark p-3 justify-content-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, corporis.
-            Itaque aspernatur inventore magnam soluta similique nobis ab, ea quasi!
-            Sapiente odio voluptatibus quos totam reiciendis facilis, id perferendis repudiandae!
-            A necessitatibus, harum placeat sapiente impedit at facilis ad corrupti.
-            At reprehenderit, ipsum minima laudantium nobis id cupiditate molestias tenetur!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias commodi libero velit impedit nisi
-            minus reiciendis optio officiis numquam animi corrupti, tempora saepe non magni a. Aliquam, ullam ea
-            molestiae facilis consectetur corrupti dolor incidunt officia quasi beatae illum cumque aperiam sapiente est
-            repellendus excepturi odio recusandae veniam perspiciatis!
+            We can take responsibility for the property key and allow access to authorized persons and guest. We will hold a spare key in case of key loss. We can also arrange that a locksmith changes the locks if and when necessary. We can manage the key safe and be responsible for changing the code and informing tenants of their personal Key Safe code to gain access to the property. The fee for this service is €10 per month.
+            Whether you're seeking to buy or sell property in realbidz our know-how and market insights will help you through the process to make it easier, more enjoyable and rewarding. Blue Sky Properties approach to real estate is to maintain a highly personalized service, ensuring utmost care, trust, quality and ultimately a better client experience. www.realbidz.com is a property portal. All real estate inquiries are handled by Registered professional Real Estate Agents. FOX Smart Estate Agency is a Registered & Licensed Estate Agent with Registration No. 488 and Licensed No. 344/E
         </p>
     </div>
     <div id="footer" style="text-decoration: none; color: white; text-align: justify;"></div>
+    <script>
+        function download(){
+            window.location.href='coming_soon.html';
+        }
+        function index()
+        {
+            window.location.href='index.html'
+        }
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
