@@ -14,6 +14,7 @@ function welcome() {
     var element = document.getElementById("Welcome");
     var span = document.createElement("span");
     // Set the innerHTML of the span element
+
     span.innerHTML = ".";
 
     // Add the span element to the existing element
@@ -83,6 +84,15 @@ function city() {
     document.getElementById("img2").src = image2
     document.getElementById("img3").src = image3
     document.getElementById("img4").src = image4
+    sessionStorage.setItem("image1",image1);
+    h3_image="Images/house3_01.jpg"
+    h3_image2="Images/house3_02.jpg"
+    h3_image3="Images/house3_03.jpg"
+    h3_image4="Images/house3_04.jpg"
+    sessionStorage.setItem("image2",h3_image)
+    sessionStorage.setItem("image3",h3_image2)
+    sessionStorage.setItem("image4",h3_image3)
+    sessionStorage.setItem("image04",h3_image4)
 
     if(e!='Budget')
     {
